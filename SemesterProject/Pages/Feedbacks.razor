@@ -1,0 +1,103 @@
+﻿@inject FeedbackServices FeedbackService
+@using System.Collections.Generic;
+@using System.Threading.Tasks;
+@layout NoMenuLayout
+
+@page "/feedback"
+<div class="container mt-5" style="min-height: calc(100vh - 160px);">
+    <!-- Adjusted container height to accommodate footer -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="feedback-form">
+                <h2 class="form-title">Feedback Form</h2>
+                <p class="form-description">We would like to hear your thoughts, concerns, or problems with anything so we can improve!</p>
+                <hr>
+                <EditForm Model="_fb" OnValidSubmit="HandleValidSubmit">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <InputText type="email" class="form-control" required @bind-Value="_fb.Email" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Describe Feedback:</label>
+                        <InputText type="text" class="form-control" required @bind-Value="_fb.FeedbackContent" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                </EditForm>
+                <p class="form-message">@_message</p> <!-- Display message after submitting -->
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="feedback-list">
+                <h2 class="list-title">Feedbacks Posted</h2>
+                <div class="scrollable-feedbacks">
+                    <ul class="list-group">
+                        @if (_feedbacks != null && _feedbacks.Any())
+                        {
+                            @foreach (var feedback in _feedbacks)
+                            {
+                                <li class="list-item">
+                                    <div class="feedback-item">
+                                        <p class="feedback-email">Email: @feedback.Email</p>
+                                        <p class="feedback-text">Feedback: @feedback.FeedbackContent</p>
+                                        <button class="btn btn-danger" @onclick="() => DeleteFeedback(feedback)">Delete</button>
+                                    </div>
+                                </li>
+                            }
+                        }
+                        else
+                        {
+                            <p class="no-feedbacks">No feedbacks posted yet.</p>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private Feedback _fb = new Feedback();
+    private string _message = "";
+    private List<Feedback> _feedbacks = new List<Feedback>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshData();
+    }
+
+    private async Task RefreshData()
+    {
+        _feedbacks = await FeedbackService.GetFeedbacks();
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            await FeedbackService.InsertFeedback(_fb);
+            _message = "Thanks for your feedback";
+            _fb = new Feedback(); // Empty the input fields after submission
+            await RefreshData(); // Refresh the data after submitting feedback
+        }
+        catch (Exception ex)
+        {
+            _message = $"Error: {ex.Message}";
+        }
+    }
+
+    private async Task DeleteFeedback(Feedback feedback)
+    {
+        try
+        {
+            await FeedbackService.DeleteFeedback(feedback.Email);
+            _feedbacks.Remove(feedback);
+            _message = "Feedback deleted successfully";
+        }
+        catch (Exception ex)
+        {
+            _message = $"Error: {ex.Message}";
+        }
+    }
+}

@@ -1,0 +1,450 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VP\\SP 2\\SemesterProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|d:\\vp\\sp 2\\semesterproject\\semesterproject\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\moham\\AppData\\Local\\Temp\\Rar$DIa7808.17322\\Login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\datalayer\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\datalayer\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\wwwroot\\dashboardcss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\wwwroot\\dashboardcss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\pages\\accountinfo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\accountinfo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\datalayer\\accountservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\datalayer\\accountservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\pages\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\registration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\pages\\aboutus.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\aboutus.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\shared\\nomenulayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\shared\\nomenulayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\pages\\addexpense.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\addexpense.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\datalayer\\expenseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\datalayer\\expenseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\pages\\addincome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\addincome.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\datalayer\\incomeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\datalayer\\incomeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\datalayer\\feedbackservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\datalayer\\feedbackservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\datalayer\\notesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\datalayer\\notesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\datalayer\\userstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\datalayer\\userstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\pages\\feedbacks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\feedbacks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\datalayer\\categoryservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\datalayer\\categoryservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\pages\\category.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\category.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\wwwroot\\aboutus.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\wwwroot\\aboutus.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\wwwroot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\wwwroot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|D:\\VP\\SP 2\\SemesterProject\\semesterproject\\pages\\feedbacks.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5C4FA1FB-8333-48DB-9AEB-07521FEE03FE}|SemesterProject\\SemesterProject.csproj|solutionrelative:semesterproject\\pages\\feedbacks.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Aboutus.razor",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Aboutus.razor",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\Aboutus.razor",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Aboutus.razor",
+              "RelativeToolTip": "SemesterProject\\Pages\\Aboutus.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABJAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T20:18:53.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dashboard.razor",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Dashboard.razor",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\Dashboard.razor",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Dashboard.razor",
+              "RelativeToolTip": "SemesterProject\\Pages\\Dashboard.razor",
+              "ViewState": "AQIAALkAAAAAAAAAAAAYwNEAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T07:30:10.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\moham\\AppData\\Local\\Temp\\Rar$DIa7808.17322\\Login.razor",
+              "ToolTip": "C:\\Users\\moham\\AppData\\Local\\Temp\\Rar$DIa7808.17322\\Login.razor",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAAAF4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T15:06:04.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Accountinfo.razor",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Accountinfo.razor",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\Accountinfo.razor",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Accountinfo.razor",
+              "RelativeToolTip": "SemesterProject\\Pages\\Accountinfo.razor",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAFoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T06:29:13.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.razor",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\Login.razor",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Login.razor",
+              "RelativeToolTip": "SemesterProject\\Pages\\Login.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T06:12:48.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountServices.cs",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\AccountServices.cs",
+              "RelativeDocumentMoniker": "SemesterProject\\DataLayer\\AccountServices.cs",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\AccountServices.cs",
+              "RelativeToolTip": "SemesterProject\\DataLayer\\AccountServices.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADEAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T06:28:51.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Registration.razor",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Registration.razor",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\Registration.razor",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Registration.razor",
+              "RelativeToolTip": "SemesterProject\\Pages\\Registration.razor",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAAGkAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T17:47:27.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "SemesterProject\\Shared\\MainLayout.razor",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "SemesterProject\\Shared\\MainLayout.razor",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T14:34:14.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "SemesterProject\\DataLayer\\DatabaseService.cs",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\DatabaseService.cs",
+              "RelativeToolTip": "SemesterProject\\DataLayer\\DatabaseService.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAuwFUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T19:43:54.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dashboardcss.css",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\dashboardcss.css",
+              "RelativeDocumentMoniker": "SemesterProject\\wwwroot\\dashboardcss.css",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\dashboardcss.css",
+              "RelativeToolTip": "SemesterProject\\wwwroot\\dashboardcss.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-27T07:57:21.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NoMenuLayout.razor",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Shared\\NoMenuLayout.razor",
+              "RelativeDocumentMoniker": "SemesterProject\\Shared\\NoMenuLayout.razor",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Shared\\NoMenuLayout.razor",
+              "RelativeToolTip": "SemesterProject\\Shared\\NoMenuLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T20:09:57.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddExpense.razor",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\AddExpense.razor",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\AddExpense.razor",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\AddExpense.razor",
+              "RelativeToolTip": "SemesterProject\\Pages\\AddExpense.razor",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAvwKYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T07:52:50.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IncomeServices.cs",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\IncomeServices.cs",
+              "RelativeDocumentMoniker": "SemesterProject\\DataLayer\\IncomeServices.cs",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\IncomeServices.cs",
+              "RelativeToolTip": "SemesterProject\\DataLayer\\IncomeServices.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAwwFMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T16:51:23.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddIncome.razor",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\AddIncome.razor",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\AddIncome.razor",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\AddIncome.razor",
+              "RelativeToolTip": "SemesterProject\\Pages\\AddIncome.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T07:39:08.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\Error.cshtml",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Error.cshtml",
+              "RelativeToolTip": "SemesterProject\\Pages\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T06:53:12.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\_Host.cshtml",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "SemesterProject\\Pages\\_Host.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-27T06:53:27.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FeedbackServices.cs",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\FeedbackServices.cs",
+              "RelativeDocumentMoniker": "SemesterProject\\DataLayer\\FeedbackServices.cs",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\FeedbackServices.cs",
+              "RelativeToolTip": "SemesterProject\\DataLayer\\FeedbackServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T18:43:07.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExpenseServices.cs",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\ExpenseServices.cs",
+              "RelativeDocumentMoniker": "SemesterProject\\DataLayer\\ExpenseServices.cs",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\ExpenseServices.cs",
+              "RelativeToolTip": "SemesterProject\\DataLayer\\ExpenseServices.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAswA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T07:47:06.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "NotesServices.cs",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\NotesServices.cs",
+              "RelativeDocumentMoniker": "SemesterProject\\DataLayer\\NotesServices.cs",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\NotesServices.cs",
+              "RelativeToolTip": "SemesterProject\\DataLayer\\NotesServices.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T07:12:56.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserState.cs",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\UserState.cs",
+              "RelativeDocumentMoniker": "SemesterProject\\DataLayer\\UserState.cs",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\UserState.cs",
+              "RelativeToolTip": "SemesterProject\\DataLayer\\UserState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T07:51:20.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Feedbacks.razor",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Feedbacks.razor",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\Feedbacks.razor",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Feedbacks.razor",
+              "RelativeToolTip": "SemesterProject\\Pages\\Feedbacks.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T15:53:48.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\appsettings.json",
+              "RelativeDocumentMoniker": "SemesterProject\\appsettings.json",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\appsettings.json",
+              "RelativeToolTip": "SemesterProject\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-26T18:10:13.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CategoryServices.cs",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\CategoryServices.cs",
+              "RelativeDocumentMoniker": "SemesterProject\\DataLayer\\CategoryServices.cs",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\DataLayer\\CategoryServices.cs",
+              "RelativeToolTip": "SemesterProject\\DataLayer\\CategoryServices.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAwwEkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T17:28:00.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Category.razor",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Category.razor",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\Category.razor",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Category.razor",
+              "RelativeToolTip": "SemesterProject\\Pages\\Category.razor",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAC8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T17:26:22.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Aboutus.css",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\Aboutus.css",
+              "RelativeDocumentMoniker": "SemesterProject\\wwwroot\\Aboutus.css",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\Aboutus.css",
+              "RelativeToolTip": "SemesterProject\\wwwroot\\Aboutus.css",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-25T20:48:00.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\style.css",
+              "RelativeDocumentMoniker": "SemesterProject\\wwwroot\\style.css",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\style.css",
+              "RelativeToolTip": "SemesterProject\\wwwroot\\style.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-25T18:55:03.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Feedbacks.razor.css",
+              "DocumentMoniker": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Feedbacks.razor.css",
+              "RelativeDocumentMoniker": "SemesterProject\\Pages\\Feedbacks.razor.css",
+              "ToolTip": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\Pages\\Feedbacks.razor.css",
+              "RelativeToolTip": "SemesterProject\\Pages\\Feedbacks.razor.css",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAcwFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-25T20:01:26.028Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

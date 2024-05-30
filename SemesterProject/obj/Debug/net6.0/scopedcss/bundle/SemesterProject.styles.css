@@ -1,0 +1,470 @@
+/* _content/SemesterProject/Pages/Accountinfo.razor.rz.scp.css */
+.section[b-gvy96od68f] {
+	position: relative;
+	height: 100vh;
+}
+
+.section .section-center[b-gvy96od68f] {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#booking[b-gvy96od68f] {
+	font-family: 'Alice', serif;
+	background: rgba(133, 104, 73, 0.33);
+}
+
+.booking-form[b-gvy96od68f] {
+	position: relative;
+	max-width: 912px;
+	width: 100%;
+	margin: auto;
+	background: #fff;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form .booking-bg[b-gvy96od68f] {
+	position: absolute;
+	left: 25px;
+	top: -25px;
+	bottom: -25px;
+	width: 400px;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 25px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+	.booking-form .booking-bg[b-gvy96od68f]::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		background: rgb(59, 236, 150);
+	}
+
+.booking-form>form[b-gvy96od68f] {
+	margin-left: 425px;
+	padding: 30px;
+}
+
+.booking-form .form-header[b-gvy96od68f] {
+	margin-bottom: 30px;
+	margin-top: 60px;
+	position: relative;
+	z-index: 20;
+}
+
+.booking-form .form-header h2[b-gvy96od68f] {
+	font-family: 'Playfair Display', serif;
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-weight: 900;
+	color: #fff;
+	font-size: 42px;
+	text-transform: capitalize;
+}
+
+.booking-form .form-header p[b-gvy96od68f] {
+	color: #fff;
+	font-size: 18px;
+}
+
+.booking-form .form-group[b-gvy96od68f] {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.booking-form .form-control[b-gvy96od68f] {
+	background-color: #fff;
+	height: 45px;
+	padding: 0px 15px;
+	color: #151515;
+	border: 1px solid #e5e5e5;
+	font-size: 16px;
+	font-weight: 700;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 40px;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.booking-form .form-control[b-gvy96od68f]::-webkit-input-placeholder {
+	color: #e5e5e5;
+}
+
+.booking-form .form-control:-ms-input-placeholder[b-gvy96od68f] {
+	color: #e5e5e5;
+}
+
+.booking-form .form-control[b-gvy96od68f]::placeholder {
+	color: #e5e5e5;
+}
+
+.booking-form .form-control:focus[b-gvy96od68f] {
+	background: #f8f8f8;
+}
+
+.booking-form input[type="date"].form-control:invalid[b-gvy96od68f] {
+	color: #e5e5e5;
+}
+
+.booking-form select.form-control[b-gvy96od68f] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control:invalid[b-gvy96od68f] {
+	color: #e5e5e5;
+}
+
+.booking-form select.form-control option[b-gvy96od68f] {
+	color: #151515;
+}
+
+.booking-form select.form-control+.select-arrow[b-gvy96od68f] {
+	position: absolute;
+	right: 3px;
+	bottom: 5px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: #e5e5e5;
+	font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow[b-gvy96od68f]:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label[b-gvy96od68f] {
+	color: #856849;
+	text-transform: uppercase;
+	line-height: 24px;
+	height: 24px;
+	font-size: 14px;
+	font-weight: 400;
+	margin-left: 20px;
+}
+
+.booking-form .form-btn[b-gvy96od68f] {
+	margin-top: 30px;
+}
+
+	.booking-form .submit-btn[b-gvy96od68f] {
+		display: block;
+		width: 100%;
+		color: #fff;
+		background-color: rgb(59, 236, 150);
+		font-weight: 700;
+		font-size: 18px;
+		border: none;
+		border-radius: 40px;
+		height: 55px;
+		-webkit-transition: 0.2s all;
+		transition: 0.2s all;
+	}
+
+.booking-form .submit-btn:hover[b-gvy96od68f],
+.booking-form .submit-btn:focus[b-gvy96od68f] {
+	background-color: rgba(133, 104, 73, 1);
+}
+
+@media only screen and (max-width: 768px) {
+	.booking-form .booking-bg[b-gvy96od68f] {
+		position: relative;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: -15px;
+		width: 95%;
+		margin: auto;
+	}
+	.booking-form>form[b-gvy96od68f] {
+		margin-left: 0px;
+	}
+}
+
+/* Custom styles for the account information page */
+.section[b-gvy96od68f] {
+    padding: 60px 0;
+}
+
+.section-center[b-gvy96od68f] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.booking-form[b-gvy96od68f] {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.booking-bg[b-gvy96od68f] {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.form-header[b-gvy96od68f] {
+    margin-bottom: 30px;
+}
+
+.form-label[b-gvy96od68f] {
+    font-weight: bold;
+}
+
+.form-group[b-gvy96od68f] {
+    margin-bottom: 20px;
+}
+
+.form-btn[b-gvy96od68f] {
+    text-align: end;
+}
+
+.submit-btn[b-gvy96od68f] {
+    width: 80px;  /* Smaller width for the submit button */
+}
+/* _content/SemesterProject/Pages/Feedbacks.razor.rz.scp.css */
+.feedback-form[b-s257e3qsfp] {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-title[b-s257e3qsfp] {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.form-description[b-s257e3qsfp] {
+    color: #666;
+}
+
+.form-group[b-s257e3qsfp] {
+    margin-bottom: 20px;
+}
+
+.form-label[b-s257e3qsfp] {
+    font-weight: bold;
+}
+
+.form-message[b-s257e3qsfp] {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.feedback-list[b-s257e3qsfp] {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.list-title[b-s257e3qsfp] {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.scrollable-feedbacks[b-s257e3qsfp] {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.list-group[b-s257e3qsfp] {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list-item[b-s257e3qsfp] {
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.feedback-number[b-s257e3qsfp] {
+    background-color: #f0f0f0;
+    color: #666;
+    padding: 5px 10px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.feedback-email[b-s257e3qsfp] {
+    font-size: 12px;
+    color: #999;
+}
+
+.feedback-text[b-s257e3qsfp] {
+    font-size: 14px;
+}
+
+.no-feedbacks[b-s257e3qsfp] {
+    color: #999;
+}
+/* _content/SemesterProject/Shared/MainLayout.razor.rz.scp.css */
+.page[b-pliglcfzn4] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-pliglcfzn4] {
+    flex: 1;
+}
+
+.sidebar[b-pliglcfzn4] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-pliglcfzn4] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-pliglcfzn4]  a, .top-row .btn-link[b-pliglcfzn4] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-pliglcfzn4] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-pliglcfzn4] {
+        display: none;
+    }
+
+    .top-row.auth[b-pliglcfzn4] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-pliglcfzn4], .top-row .btn-link[b-pliglcfzn4] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-pliglcfzn4] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-pliglcfzn4] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-pliglcfzn4] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-pliglcfzn4], article[b-pliglcfzn4] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/SemesterProject/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-5xgiqorq2h] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-5xgiqorq2h] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-5xgiqorq2h] {
+    font-size: 1.1rem;
+}
+
+.oi[b-5xgiqorq2h] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-5xgiqorq2h] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-5xgiqorq2h] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-5xgiqorq2h] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-5xgiqorq2h]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-5xgiqorq2h]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-5xgiqorq2h]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-5xgiqorq2h] {
+        display: none;
+    }
+
+    .collapse[b-5xgiqorq2h] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}

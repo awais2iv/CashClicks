@@ -1,0 +1,53 @@
+﻿.about-area {
+    padding-top: 20px; /* Remove or adjust the padding from the top */
+    padding-bottom: 350px; /* Add bottom padding to move the content away from the footer */
+}
+
+.about-img {
+    position: relative;
+}
+
+    .about-img:before {
+        position: absolute;
+        content: '';
+        right: -30px;
+        top: 30px;
+        border: 9px solid rgba(255, 255, 255, 0.5);
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-img img {
+        width: 100%; /* Adjust the width to 100% */
+        max-width: 100%; /* Ensure image responsiveness */
+        display: block; /* Ensure image does not overflow its container */
+        margin: auto; /* Center the image */
+    }
+
+.about-text {
+    padding-top: 5%; /* Example value, adjust as needed */
+}
+
+    .about-text h2 {
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px; /* Reduce the font size */
+    }
+
+    .about-text p {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px; /* Reduce the font size */
+        color: black;
+    }
+
+    .about-text a {
+        background: #b5a7f8;
+        color: #fff;
+        padding: 7px 15px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+body {
+    background-color: white !important;
+}

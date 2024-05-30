@@ -1,0 +1,170 @@
+﻿@page "/addincome"
+@inject IConfiguration Configuration
+@inject IncomeServices IncomeServices
+@inject NavigationManager NavigationManager
+@inject UserState UserState
+@inherits LayoutComponentBase
+@inject UserState UserState
+@using System;
+@using System.Collections.Generic;
+@using System.Data;
+
+
+@if (UserState.userId != null)
+{
+<h3 class="text-center my-4">Income Management</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card shadow-lg">
+                <div class="card-header bg-black text-white text-center">
+                    <h4 class="card-title mb-0">Add Income</h4>
+                </div>
+                <div class="card-body">
+                    <EditForm Model="@income" OnValidSubmit="@InsertIncome">
+                        <DataAnnotationsValidator />
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="income_desc" @bind="@income.income_desc" placeholder="Income Description" required />
+                            <label for="income_desc">Income Description</label>
+                            <ValidationMessage For="@(() => income.income_desc)" />
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="amount" @bind="@income.amount" placeholder="Amount" required />
+                            <label for="amount">Amount</label>
+                            <ValidationMessage For="@(() => income.amount)" />
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100 mt-3">Add Income</button>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (incomes != null && incomes.Rows.Count > 0)
+    {
+        <div class="row mt-5">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h4 class="card-title mb-0">Income Data</h4>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-hover mb-0">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Income Description</th>
+                                    <th>Amount</th>
+                                    <th>Account ID</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (DataRow row in incomes.Rows)
+                                {
+                                    <tr>
+                                        <td>@row["income_desc"]</td>
+                                        <td>@row["amount"]</td>
+                                        <td>@row["account_id"]</td>
+                                        <td>
+                                            <button class="btn btn-danger" @onclick="@(() => ShowDeleteConfirmation(Convert.ToInt32(row["income_id"])))">Delete</button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+}
+    else
+    {
+        <p>Sorry, this page can't be accessed.</p>
+        <button class="btn btn-primary" @onclick="NavigateBack">Back</button>
+    }
+
+
+@if (showConfirmation)
+{
+    <div class="modal fade show d-block" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                    <button type="button" class="btn-close" aria-label="Close" @onclick="CloseConfirmationModal"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete this income entry?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CloseConfirmationModal">Cancel</button>
+                    <button type="button" class="btn btn-danger" @onclick="DeleteIncomeConfirmed">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+}
+
+
+
+
+@code {
+    private Income income = new Income();
+    private DataTable incomes;
+    private int incomeToDelete;
+    private bool showConfirmation = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (UserState.userId != null)
+        {
+            await LoadIncomeData();
+        }
+        
+    }
+
+    private async Task LoadIncomeData()
+    {
+        string accountId = UserState.userId; // Fetch account id from UserState
+        incomes = await IncomeServices.GetIncomeByAccountId(accountId);
+    }
+
+    private async Task InsertIncome()
+    {
+        string accountId = UserState.userId; // Fetch account id from UserState
+        income.account_id = accountId;
+        await IncomeServices.InsertIncomeDetails(income);
+        await LoadIncomeData(); // Refresh income data after insertion
+        income = new Income(); // Clear the input fields after submission
+    }
+
+    private void ShowDeleteConfirmation(int incomeId)
+    {
+        incomeToDelete = incomeId;
+        showConfirmation = true;
+    }
+
+    private void CloseConfirmationModal()
+    {
+        showConfirmation = false;
+    }
+
+    private async Task DeleteIncomeConfirmed()
+    {
+        await IncomeServices.DeleteIncome(incomeToDelete);
+        await LoadIncomeData(); // Refresh income data after deletion
+        showConfirmation = false;
+    }
+
+    private void NavigateBack()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+}

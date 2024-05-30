@@ -1,0 +1,141 @@
+﻿@page "/categories"
+@inject DatabaseService DatabaseService
+@inject CategoryServices CategoryService
+@inject NavigationManager NavigationManager
+@inject UserState UserState
+@using Microsoft.AspNetCore.Components;
+@using System.Collections.Generic;
+@using System.Data;
+
+@if (UserState.userId != null)
+{
+    <div class="container mt-5" style="min-height: calc(100vh - 160px);">
+        <!-- Adjusted container height to accommodate footer -->
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="mb-4">Categories</h2>
+                <!-- Input field and button for adding a category -->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter category name" @bind="_newCategoryName">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" @onclick="AddCategory">Add</button>
+                    </div>
+                </div>
+                <!-- Table to display categories -->
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Category Name</th>
+                            <th>Category ID</th> <!-- New column for Category ID -->
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var category in _categories)
+                        {
+                            <tr>
+                                <td>@category.CategoryName</td>
+                                <td>@GetCategoryId(category.CategoryName)</td> <!-- Display Category ID -->
+                                <td><button class="btn btn-danger btn-sm" @onclick="() => DeleteCategory(category.CategoryName)">Delete</button></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>Sorry this page can't be accessed</p>
+    <!-- Button to navigate back to login page -->
+    <button class="btn btn-primary" @onclick="NavigateBack">Back</button>
+}
+
+@code {
+    private List<CategoryExpense> _categories = new List<CategoryExpense>();
+    private string _newCategoryName = "";
+    private Dictionary<string, string> _categoryIds = new Dictionary<string, string>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshCategories();
+        await LoadCategoryIds();
+    }
+
+    private async Task RefreshCategories()
+    {
+        // Retrieve categories from the database
+        _categories = await CategoryService.GetCategories();
+        StateHasChanged(); // Refresh the UI
+    }
+
+    private async Task LoadCategoryIds()
+    {
+        foreach (var category in _categories)
+        {
+            var categoryId = await CategoryService.GetCategoryIdByName(category.CategoryName);
+            if (categoryId != null)
+            {
+                _categoryIds[category.CategoryName] = categoryId;
+            }
+        }
+        StateHasChanged(); // Refresh the UI after loading category IDs
+    }
+
+    private async Task AddCategory()
+    {
+        try
+        {
+            if (!string.IsNullOrEmpty(_newCategoryName))
+            {
+                // Create a new category object
+                var newCategory = new CategoryExpense { CategoryName = _newCategoryName };
+
+                // Add the category to the database
+                await CategoryService.InsertCategory(newCategory);
+
+                // Refresh the categories after addition
+                await RefreshCategories();
+                await LoadCategoryIds(); // Refresh category IDs after addition
+
+                // Clear the input field
+                _newCategoryName = "";
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle any errors
+            Console.WriteLine($"Error adding category: {ex.Message}");
+        }
+    }
+
+    private async Task DeleteCategory(string categoryName)
+    {
+        try
+        {
+            await CategoryService.DeleteCategory(categoryName);
+            await RefreshCategories(); // Refresh the categories after deletion
+            _categoryIds.Remove(categoryName); // Remove the category ID from the dictionary
+        }
+        catch (Exception ex)
+        {
+            // Handle any errors
+            Console.WriteLine($"Error deleting category: {ex.Message}");
+        }
+    }
+
+    private void NavigateBack()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+
+    private string GetCategoryId(string categoryName)
+    {
+        if (_categoryIds.TryGetValue(categoryName, out var categoryId))
+        {
+            return categoryId;
+        }
+        return "Loading..."; // Return a placeholder text while the ID is being loaded
+    }
+}

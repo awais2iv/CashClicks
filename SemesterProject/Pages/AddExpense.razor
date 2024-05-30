@@ -1,0 +1,196 @@
+﻿@page "/addexpense"
+@inject IConfiguration Configuration
+@inject ExpenseServices ExpenseServices
+@inject CategoryServices CategoryServices
+@inject NavigationManager NavigationManager
+@inject UserState UserState
+@inject UserState UserState
+@inherits LayoutComponentBase
+@using System.Data;
+
+
+@if (UserState.userId != null)
+{
+<h3 class="text-center my-4">Expense Management</h3>
+
+<div class="container" >
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card shadow-lg">
+                <div class="card-header bg-black text-white text-center">
+                    <h4 class="card-title mb-0">Add Expense</h4>
+                </div>
+                <div class="card-body">
+                    <EditForm Model="@expense" OnValidSubmit="@InsertExpense">
+                        <DataAnnotationsValidator />
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="expense_desc" @bind="@expense.expense_desc" placeholder="Expense Description" required />
+                            <label for="expense_desc">Expense Description</label>
+                            <ValidationMessage For="@(() => expense.expense_desc)" />
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="amount" @bind="@expense.amount" placeholder="Amount" required />
+                            <label for="amount">Amount</label>
+                            <ValidationMessage For="@(() => expense.amount)" />
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <select class="form-select" @bind="@expense.category_name">
+                                <option value="">Select Category</option>
+                                @foreach (var category in categories)
+                                {
+                                    <option value="@category.CategoryName">@category.CategoryName</option>
+                                }
+                            </select>
+
+                            <label for="category">Category</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100 mt-3">Add Expense</button>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (expenses != null && expenses.Rows.Count > 0)
+    {
+        <div class="row mt-5">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h4 class="card-title mb-0">Expense Data</h4>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-hover mb-0">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Expense Description</th>
+                                    <th>Amount</th>
+                                    <th>Category</th>
+                                    <th>Account ID</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (DataRow row in expenses.Rows)
+                                {
+                                    <tr>
+                                        <td>@row["expense_desc"]</td>
+                                        <td>@row["amount"]</td>
+                                        <td>@row["category_name"]</td>
+                                        <td>@row["account_id"]</td>
+                                        <td>
+                                            <button class="btn btn-danger" @onclick="@(() => ShowDeleteConfirmation(Convert.ToInt32(row["expense_id"])))">Delete</button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+}
+else
+{
+    <p>Sorry, this page can't be accessed.</p>
+    <button class="btn btn-primary" @onclick="NavigateBack">Back</button>
+}
+
+
+
+@if (showConfirmation)
+{
+    <div class="modal fade show d-block" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                    <button type="button" class="btn-close" aria-label="Close" @onclick="CloseConfirmationModal"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete this expense entry?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CloseConfirmationModal">Cancel</button>
+                    <button type="button" class="btn btn-danger" @onclick="DeleteExpenseConfirmed">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+}
+
+
+@code {
+    private Expense expense = new Expense();
+    private DataTable expenses;
+    private int expenseToDelete;
+    private bool showConfirmation = false;
+    private List<CategoryExpense> categories = new List<CategoryExpense>();
+  
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (UserState.userId != null)
+        {
+            await LoadExpenseData();
+            await LoadCategories();
+        }
+    }
+
+    private async Task LoadExpenseData()
+    {
+        string accountId = UserState.userId; // Fetch account id from UserState
+        expenses = await ExpenseServices.GetExpenseByAccountId(accountId);
+    }
+
+    private async Task LoadCategories()
+    {
+        categories = await CategoryServices.GetCategories();
+    }
+
+    private async Task InsertExpense()
+    {
+        string accountId = UserState.userId; // Fetch account id from UserState
+        expense.account_id = accountId;
+
+        // Insert expense details
+        await ExpenseServices.InsertExpenseDetails(expense);
+
+        // Refresh expense data after insertion
+        await LoadExpenseData();
+
+        // Clear the input fields after submission
+        expense = new Expense();
+    }
+
+
+    private void ShowDeleteConfirmation(int expenseId)
+    {
+        expenseToDelete = expenseId;
+        showConfirmation = true;
+    }
+
+    private void CloseConfirmationModal()
+    {
+        showConfirmation = false;
+    }
+
+    private async Task DeleteExpenseConfirmed()
+    {
+        await ExpenseServices.DeleteExpense(expenseToDelete);
+        await LoadExpenseData(); // Refresh expense data after deletion
+        showConfirmation = false;
+    }
+    private void NavigateBack()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+}

@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SemesterProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SemesterProject.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\Aboutus.css",
+      "PackagePath": "staticwebassets\\Aboutus.css"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\accountbalance.png",
+      "PackagePath": "staticwebassets\\accountbalance.png"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\balance.png",
+      "PackagePath": "staticwebassets\\balance.png"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\dashboardcss.css",
+      "PackagePath": "staticwebassets\\dashboardcss.css"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\signup.jpg",
+      "PackagePath": "staticwebassets\\signup.jpg"
+    },
+    {
+      "Id": "D:\\VP\\SP 2\\SemesterProject\\SemesterProject\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SemesterProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.SemesterProject.props",
+      "PackagePath": "build\\SemesterProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.SemesterProject.props",
+      "PackagePath": "buildMultiTargeting\\SemesterProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.SemesterProject.props",
+      "PackagePath": "buildTransitive\\SemesterProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,76 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>CashClicks.</PageTitle>
+
+<div class="page">
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 80px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="font-family: 'Pacifico', cursive;">CashClicks.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <NavLink class="nav-link" href="dashboard">Home</NavLink>
+                        </li>
+                        <li class="nav-item">
+                            <NavLink class="nav-link" href="categories">Add Category</NavLink>
+                        </li>
+                        <li class="nav-item">
+                            <NavLink class="nav-link" href="addexpense">Add Expense</NavLink>
+                        </li>
+                        <li class="nav-item">
+                            <NavLink class="nav-link" href="addincome">Add Income</NavLink>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-auto">
+                        <button @onclick="Logout" class="btn btn-outline-success">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <article class="content px-4">
+            @Body
+        </article>
+        <footer class="footer bg-dark text-white text-center py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="feedback" class="text-white">Give us a feedback</a>
+
+                    </div>
+                    <div class="col-md-4">
+                        <p>&copy; 2024 CashClicks. All rights reserved.</p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <a href="aboutus" class="text-white">About Us.</a>
+
+                    </div>
+
+                </div>
+                <!--implementing an anchor tag showing give us a feedback and navigating to feedback-->
+
+
+            </div>
+        </footer>
+    </main>
+</div>
+
+@code {
+    [Inject]
+    private NavigationManager NavigationManager { get; set; }
+
+    [Inject]
+    private UserState UserState { get; set; }
+
+    private void Logout()
+    {
+        // Update UserState and navigate to login page
+        UserState.userId = null; // or ""
+        NavigationManager.NavigateTo("/login");
+    }
+}
